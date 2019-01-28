@@ -1,0 +1,53 @@
+.profile-friends__list
+  background-color: white
+  padding: 20px
+  +grey-border()
+
+
+  $center-with-gap: 20px
+
+  .row
+    margin-left: $center-with-gap
+    margin-bottom: 15px
+
+  .profile-friend__single
+    +grey-border()
+    overflow: auto
+    margin-right: $center-with-gap
+    position: relative
+
+  img
+    float: left
+    width: 100px
+    margin-right: 15px
+
+  h2
+    font-size: 15px
+    color: $fb-blue-text
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    left: 25%
+
+.profile-friend__unfriend-btn
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  right: 3%
+  border-radius: 0
+  -webkit-appearance: none
+  background-color: #F6F7F9
+  +grey-border
+  padding: 7px 12px
+  font-weight: 700
+  color: #4b4f56
+
+
+#profile .friends .container
+  width: 100%
+  overflow: visible
+  height: 375px
+
+  .row
+    overflow: visible
+

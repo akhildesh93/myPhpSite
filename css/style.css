@@ -1,0 +1,763 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.white-background {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #edf0f5;
+}
+
+.row {
+  overflow: auto;
+}
+
+.one-of-two {
+  width: 50%;
+  float: left;
+}
+
+.one-of-three {
+  width: 33.33%;
+  float: left;
+}
+
+.two-of-three {
+  width: 66.66%;
+  float: left;
+}
+
+.one-of-four {
+  width: 25%;
+  float: left;
+}
+
+.three-of-four {
+  width: 75%;
+  float: left;
+}
+
+#index nav {
+  background-color: #3b5998;
+  height: 90px;
+  position: relative;
+}
+
+#index nav h1 {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
+
+#index nav form {
+  float: right;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#index nav .reg-input {
+  float: left;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#index nav .reg-input input {
+  height: 20px;
+  width: 150px;
+}
+
+#index nav input[type=submit] {
+  float: left;
+  margin-top: 14px;
+  border-radius: 0px;
+  background-color: #4267b2;
+  color: white;
+  border: 1px solid black;
+  padding: 4px 10px;
+}
+
+#index nav label {
+  display: block;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+#index header {
+  background-color: #edf0f5;
+  overflow: auto;
+  padding: 30px 0;
+}
+
+#index header .row {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#index header .one-of-two {
+  width: 500px;
+  padding: 0 2%;
+}
+
+#index header h2 {
+  font-size: 36px;
+  margin-bottom: 7px;
+}
+
+#index header .signup-subtext {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+#index #registration div {
+  overflow: auto;
+}
+
+#index #registration input {
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 18px;
+  color: lightgray;
+}
+
+#index #registration .reg__firstname {
+  margin-right: 5px;
+}
+
+#index #registration .reg__lastname {
+  margin-left: 5px;
+}
+
+#index #registration .reg__halfbox {
+  float: left;
+  width: 50%;
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+#index #registration .reg__fullbox {
+  width: 100%;
+  max-width: 372px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#index #registration .gender {
+  margin-top: 20px;
+}
+
+#index #registration .disclosure {
+  max-width: 400px;
+  line-height: 10px;
+  margin: 20px 0;
+}
+
+#index #registration span {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+#index #registration input[type=submit] {
+  color: white;
+  background-color: #69a74e;
+  border: 1px solid grey;
+}
+
+.login-nav {
+  background-color: #3b5998;
+  padding: 10px 20%;
+  overflow: auto;
+  position: relative;
+}
+
+.login-nav .nav__zbook-logo {
+  height: 30px;
+  float: left;
+}
+
+.login-nav form {
+  float: left;
+  margin-left: 15px;
+  background-color: white;
+  border: none;
+}
+
+.login-nav input {
+  height: 30px;
+  width: 500px;
+  border: none;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.login-nav button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: white;
+}
+
+.login-nav .profile-nav__options {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.login-nav .profile-nav__options a {
+  color: white;
+  padding: 0 5px;
+  font-weight: 300;
+}
+
+.login-nav .profile-nav__options .fa {
+  color: #1d2129;
+  font-size: 20px;
+}
+
+.login-nav .profile-nav__photo {
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+}
+
+.login-nav .profile-nav__name, .login-nav .profile-nav__home, .login-nav .profile-nav__friends {
+  position: relative;
+  bottom: 7px;
+}
+
+.login-nav .profile-nav__name-link, .login-nav .profile-nav__photo-link {
+  padding: 0 !important;
+}
+
+.login-nav .profile-nav__name-link {
+  padding-right: 10px !important;
+}
+
+.login-nav .profile-nav__friends-num {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  background-color: lightslategrey;
+  padding: 2px;
+  font-size: 10px;
+}
+
+#profile, #profile-about {
+  background-color: #edf0f5;
+}
+
+#profile .container, #profile-about .container {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#profile header, #profile-about header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#profile header .cover-photo, #profile-about header .cover-photo {
+  height: 205px;
+  width: 100%;
+  border: 0.5px solid #dadfe1;
+}
+
+#profile header .profile-photo, #profile-about header .profile-photo {
+  border: 3px solid white;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+}
+
+#profile header .menu-bar, #profile-about header .menu-bar {
+  background-color: white;
+  padding: 20px 0;
+  padding-left: 240px;
+  border: 0.5px solid #dadfe1;
+  margin-top: -5px;
+}
+
+#profile header li, #profile-about header li {
+  display: inline-block;
+  padding: 0 20px;
+  border-right: 1px solid lightgray;
+}
+
+#profile header li a, #profile-about header li a {
+  color: #365899;
+  font-weight: 500;
+}
+
+#left-panel {
+  width: 400px;
+  float: left;
+  border-right: 15px #edf0f5 solid;
+}
+
+#left-panel .intro {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 0.5px solid #dadfe1;
+}
+
+#left-panel .intro h2 {
+  display: inline;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#left-panel .intro a {
+  display: block;
+  color: #4080ff;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+#left-panel .friends {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid #dadfe1;
+}
+
+#left-panel .friends h2 {
+  display: inline;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#left-panel .friends .friends__heading {
+  margin-bottom: 10px;
+}
+
+#left-panel .friends .one-of-three {
+  position: relative;
+}
+
+#left-panel .friends .friends__name {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  font-size: 12px;
+  color: white;
+  font-weight: 300;
+  width: 80px;
+}
+
+#left-panel .friends img {
+  width: 100%;
+  padding: 5px;
+}
+
+#right-panel {
+  width: 600px;
+  float: left;
+}
+
+.status-update {
+  border: 0.5px solid #dadfe1;
+  padding: 15px;
+}
+
+.status-update form {
+  text-align: right;
+  width: 100%;
+}
+
+.status-update input[type=text] {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.status-update input[type=submit] {
+  width: 65px;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+}
+
+.text-wall-post {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #dadfe1;
+}
+
+.text-wall-post .text-wall-post__details {
+  overflow: auto;
+}
+
+.text-wall-post .text-wall-post__details img {
+  width: 40px;
+  float: left;
+}
+
+.text-wall-post .text-wall-post__details .text-wall-post__name {
+  float: left;
+  margin-left: 10px;
+  color: #365899;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.text-wall-post .text-wall-post__content p {
+  padding-top: 13px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.text-wall-post .text-wall-post__content h3 {
+  margin-left: 4px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.text-wall-post .text-wall-post__content form {
+  margin-top: 10px;
+}
+
+.text-wall-post .text-wall-post__content form button {
+  border: none;
+  background-color: white;
+  color: #4b4f56;
+  font-size: 16px;
+}
+
+.text-wall-post__actions {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#search {
+  background-color: #edf0f5;
+}
+
+#search .container {
+  border: 1px solid #dadfe1;
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#search .search-results__single {
+  overflow: auto;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+#search .search-results__single img {
+  width: 72px;
+  float: left;
+  margin-right: 10px;
+}
+
+#search .search-results__single a {
+  color: #365899;
+}
+
+#search .search-results__single form {
+  float: right;
+}
+
+#search .search-results__single button {
+  padding: 5px;
+  background-color: #f6f7f9;
+  border: 1px solid lightgray;
+  font-weight: 700;
+}
+
+#timeline .newsfeed {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#profile-about .container {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.about {
+  border: 1px solid lightgray;
+  overflow: auto;
+}
+
+.about__title {
+  padding: 15px;
+  background-color: #F6F7F9;
+  border: 1px solid lightgray;
+}
+
+.about__title .fa {
+  color: #ACB2BB;
+  font-size: 25px;
+}
+
+.about__title h3 {
+  display: inline;
+  color: #4B4F56;
+  margin-left: 15px;
+}
+
+.about__details {
+  overflow: auto;
+  background-color: white;
+}
+
+.about__details-left {
+  float: left;
+  padding: 15px;
+  width: 161.375px;
+}
+
+.about__details-right {
+  float: left;
+  padding: 15px;
+  border-left: 1px solid lightgray;
+  width: 800px;
+}
+
+.about__details-right li {
+  color: #90949c;
+  font-weight: 300;
+  padding: 20px 0;
+}
+
+.about__details-right li span {
+  color: black;
+  font-weight: 500;
+}
+
+.about__details-right .row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9ebee;
+}
+
+.about__details-right .one-of-four {
+  color: #90949c;
+}
+
+.about__details-right .three-of-four {
+  color: #1d2129;
+}
+
+.about__form {
+  padding: 20px;
+}
+
+.about__form .one-of-three {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.about__form .one-of-three, .about__form .two-of-three {
+  margin: 10px 0;
+}
+
+.about__form input {
+  width: 100%;
+  height: 30px;
+}
+
+.about__form .about__birth-date {
+  width: 150px;
+}
+
+.about__form .about__submit {
+  width: 125px;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+}
+
+.about__edit-btn {
+  border-bottom: none !important;
+}
+
+.about__edit-btn i, .about__edit-btn a {
+  color: #4080ff;
+}
+
+.about__edit-btn a {
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.about__details-phone-email, .about__details-phone-form {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.about__details-btn {
+  padding: 5px 15px;
+  background-color: #4267b2;
+  color: white;
+  font-size: 12px;
+}
+
+.post-edit__textarea {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.profile-friends__list {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+.profile-friends__list .row {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.profile-friends__list .profile-friend__single {
+  border: 1px solid lightgray;
+  overflow: auto;
+  margin-right: 20px;
+  position: relative;
+}
+
+.profile-friends__list img {
+  float: left;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.profile-friends__list h2 {
+  font-size: 15px;
+  color: #365899;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 25%;
+}
+
+.profile-friend__unfriend-btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 3%;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background-color: #F6F7F9;
+  border: 1px solid lightgray;
+  padding: 7px 12px;
+  font-weight: 700;
+  color: #4b4f56;
+}
+
+#profile .friends .container {
+  width: 100%;
+  overflow: visible;
+  height: 375px;
+}
+
+#profile .friends .container .row {
+  overflow: visible;
+}
+
+#profile-photos {
+  background-color: white;
+}
+
+#profile-photos .about__title {
+  position: relative;
+}
+
+#profile-photos form {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#profile-photos .row {
+  padding: 10px 0;
+}
+
+#profile-photos .one-of-four {
+  text-align: center;
+}
+
+#profile-photos button {
+  width: 65px;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+}
+
+#profile-single-photo .row {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#profile-single-photo img {
+  width: 250px;
+}
+
+#profile-single-photo .profile-photos {
+  background-color: white;
+  text-align: center;
+}
+
+#profile-single-photo button {
+  width: 65px;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
